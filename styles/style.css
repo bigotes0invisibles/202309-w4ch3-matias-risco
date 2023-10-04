@@ -1,0 +1,51 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+:root {
+  --principal-color: #279989;
+  --principal-font-color: #fff;
+}
+
+body {
+  margin: 0;
+  width: 320px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header:has(h1, nav) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.7rem;
+  color: var(--principal-font-color);
+  background: var(--principal-color);
+  padding: 5px;
+}
+header > nav {
+  width: 41%;
+}
+nav > ul {
+  display: flex;
+  justify-content: space-between;
+}

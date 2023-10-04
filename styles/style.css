@@ -48,12 +48,10 @@ a {
   background: var(--principal-color);
   padding: 10px;
 }
-.header-container > nav {
-  width: 39%;
-}
 .header-container > nav > ul {
   display: flex;
   justify-content: space-between;
+  gap: 5px;
 }
 
 .main-container {

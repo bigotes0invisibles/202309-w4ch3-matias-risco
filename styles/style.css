@@ -84,3 +84,15 @@ a {
   background-color: var(--cart-count-back-color);
   color: var(--principal-font-color);
 }
+
+.ticked > ul > li {
+  display: flex;
+  justify-content: space-between;
+}
+.ticked > h2 {
+  text-align: end;
+  font-size: large;
+  font-weight: 400;
+  border-top: solid;
+  border-width: 1px;
+}

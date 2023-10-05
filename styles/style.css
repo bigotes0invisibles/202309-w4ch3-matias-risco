@@ -39,64 +39,69 @@ a {
   text-decoration: none;
   color: inherit;
 }
-.header-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 0.6rem;
-  color: var(--principal-font-color);
-  background: var(--principal-color);
+
+.block {
   padding: 10px;
 }
-.header-container > nav > ul {
+.block--padding-vertical-big {
+  padding: 10px 0 90px 0;
+}
+.block--flex {
   display: flex;
   justify-content: space-between;
+}
+.flex--colum {
+  flex-direction: column;
+}
+.flex--gap {
   gap: 5px;
 }
 
-.main-container {
-  padding: 10px;
-  color: var(--form-font-color);
-  background-color: var(--form-color);
-}
-
-.form-add-cart {
-  padding: 10px 0 90px 0;
-  display: flex;
-  flex-direction: column;
-  gap: 7px;
-}
-
-.form-add-cart > :is(input, button) {
-  width: max-content;
-}
-.form-add-cart > button {
+.button {
   border: none;
   padding: 10px;
   color: var(--principal-font-color);
   background-color: var(--principal-color);
 }
 
-.cart-count-container {
-  display: flex;
-  justify-content: space-between;
-  padding: 10px;
+.block--boder-top {
+  border-top: solid;
+  border-width: 1px;
+}
+
+.block--text-end {
+  text-align: end;
+}
+
+.font--large {
+  font-size: large;
+  font-weight: 400;
+}
+
+.block--align {
+  align-items: center;
+}
+
+.item:has(input[type="checkbox"]:checked) {
+  text-decoration: line-through;
+}
+
+.section {
   background-color: var(--cart-count-back-color);
   color: var(--principal-font-color);
 }
 
-.item {
-  display: flex;
-  justify-content: space-between;
-}
-.item:has(div > input[type="checkbox"]:checked) {
-  text-decoration: line-through;
+.header {
+  font-size: 0.6rem;
+  color: var(--principal-font-color);
+  background: var(--principal-color);
 }
 
-.ticked > ul + div {
-  text-align: end;
-  font-size: large;
-  font-weight: 400;
-  border-top: solid;
-  border-width: 1px;
+.main {
+  color: var(--form-font-color);
+  background-color: var(--form-color);
+}
+
+.form__box {
+  width: max-content;
 }

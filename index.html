@@ -13,29 +13,29 @@
 </head>
 
 <body>
-  <header class="header-container">
+  <header class="block block--flex header">
     <h1>Lista de la compra</h1>
     <nav>
-      <ul>
+      <ul class="block--flex flex--gap block--align">
         <li><a href="/index.html">Principal</a></li>
         <li><a href="/lista-compra.html">Lista</a></li>
         <li><a href="">Acerca de</a></li>
       </ul>
     </nav>
   </header>
-  <section class="cart-count-container">
+  <section class="block block--flex section">
     <i class="fa-solid fa-circle-minus"></i>
     2/3 comprados
   </section>
-  <main class="main-container">
+  <main class="block main">
     <article>
       <h2>Añadir artículo</h2>
-      <form class="form-add-cart">
+      <form class="block--padding-vertical-big block--flex flex--gap flex--colum">
         <labe for="name">Nombre:</labe>
-        <input type="text" id="name">
+        <input class="form__box" type="text" id="name">
         <label for="price">Precio:</label>
-        <div><input type="text" id="price">€</div>
-        <button type="sumbit">
+        <div><input class="form__box" type="text" id="price">€</div>
+        <button type="sumbit" class="button">
           añadir
         </button>
       </form>

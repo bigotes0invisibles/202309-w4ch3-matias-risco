@@ -85,11 +85,11 @@ a {
   color: var(--principal-font-color);
 }
 
-.ticked > ul > li {
+.item {
   display: flex;
   justify-content: space-between;
 }
-.ticked .item:has(div > input[type="checkbox"]:checked) {
+.item:has(div > input[type="checkbox"]:checked) {
   text-decoration: line-through;
 }
 

@@ -49,7 +49,6 @@ a {
 .block--flex {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 .flex--colum {
   flex-direction: column;
@@ -77,6 +76,10 @@ a {
 .font--large {
   font-size: large;
   font-weight: 400;
+}
+
+.block--align {
+  align-items: center;
 }
 
 .item:has(input[type="checkbox"]:checked) {

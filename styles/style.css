@@ -43,14 +43,18 @@ a {
 .block {
   padding: 10px;
 }
-
+.block--padding-vertical-big {
+  padding: 10px 0 90px 0;
+}
 .block--flex {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
-.flex-mod-gap {
+.flex--colum {
+  flex-direction: column;
+}
+.flex--gap {
   gap: 5px;
 }
 
@@ -75,10 +79,8 @@ a {
   font-weight: 400;
 }
 
-.item {
-  &:has(input[type="checkbox"]:checked) {
-    text-decoration: line-through;
-  }
+.item:has(input[type="checkbox"]:checked) {
+  text-decoration: line-through;
 }
 
 .section {
@@ -97,13 +99,6 @@ a {
   background-color: var(--form-color);
 }
 
-.form-add-cart {
-  padding: 10px 0 90px 0;
-  display: flex;
-  flex-direction: column;
-  gap: 7px;
-}
-
-.form-add-cart > :is(input, button) {
+.form__box {
   width: max-content;
 }

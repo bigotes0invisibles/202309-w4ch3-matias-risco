@@ -39,23 +39,60 @@ a {
   text-decoration: none;
   color: inherit;
 }
-.header-container {
+
+.block {
+  padding: 10px;
+}
+
+.block--flex {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 0.6rem;
-  color: var(--principal-font-color);
-  background: var(--principal-color);
-  padding: 10px;
 }
-.header-container > nav > ul {
-  display: flex;
-  justify-content: space-between;
+
+.flex-mod-gap {
   gap: 5px;
 }
 
-.main-container {
+.button {
+  border: none;
   padding: 10px;
+  color: var(--principal-font-color);
+  background-color: var(--principal-color);
+}
+
+.block--boder-top {
+  border-top: solid;
+  border-width: 1px;
+}
+
+.block--text-end {
+  text-align: end;
+}
+
+.block--font-big {
+  font-size: large;
+  font-weight: 400;
+}
+
+.item {
+  &:has(input[type="checkbox"]:checked) {
+    text-decoration: line-through;
+  }
+}
+
+.section {
+  background-color: var(--cart-count-back-color);
+  color: var(--principal-font-color);
+}
+
+.header {
+  font-size: 0.6rem;
+  color: var(--principal-font-color);
+  background: var(--principal-color);
+}
+
+.main {
   color: var(--form-font-color);
   background-color: var(--form-color);
 }
@@ -69,34 +106,4 @@ a {
 
 .form-add-cart > :is(input, button) {
   width: max-content;
-}
-.form-add-cart > button {
-  border: none;
-  padding: 10px;
-  color: var(--principal-font-color);
-  background-color: var(--principal-color);
-}
-
-.cart-count-container {
-  display: flex;
-  justify-content: space-between;
-  padding: 10px;
-  background-color: var(--cart-count-back-color);
-  color: var(--principal-font-color);
-}
-
-.item {
-  display: flex;
-  justify-content: space-between;
-}
-.item:has(div > input[type="checkbox"]:checked) {
-  text-decoration: line-through;
-}
-
-.ticked > ul + div {
-  text-align: end;
-  font-size: large;
-  font-weight: 400;
-  border-top: solid;
-  border-width: 1px;
 }
